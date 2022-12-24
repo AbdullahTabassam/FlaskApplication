@@ -1,0 +1,53 @@
+<!-- Extection to the template.html file -->
+{% extends "template.html" %}
+
+<!-- Title Block -->
+{% block title %}Homepage{% endblock %}
+
+<!-- Link to home page -->
+{% block logo %}<a href="{{url_for('index')}}">Company</a>{% endblock %} {%
+block Home %}<a href="{{url_for('index')}}">Home</a>{% endblock %} {% block
+GB_btn %}
+<!-- Register Button in Navbar-->
+<a href="{{url_for('Register')}}" class="action_btn">Register </a>
+
+<!-- Login Button in Navbar-->
+<a href="{{url_for('Login')}}" class="action_btn">Login </a>
+{% endblock %}
+
+<!-- Register button in Dropdown Block (smartphone mode) -->
+{% block dropdown%}
+<li>
+  <a href="{{url_for('Register')}}" class="action_btn">Register</a>
+</li>
+<li>
+  <a href="{{url_for('Login')}}" class="action_btn">Login </a>
+</li>
+{% endblock%}
+
+<!-- Main Block -->
+{% block main %}
+<section id="Home">
+  <h1>Welcome</h1>
+  <p>At [Company Name], we are dedicated to providing high-quality products and services to meet your needs. 
+    <br> Whether you're looking for the latest technology, fashion, or home goods, we've got you covered. <br><br>
+
+    Our team of experts works tirelessly to source the best products and services from around the world, ensuring that you always have access to the latest and greatest. 
+    <br> From cutting-edge gadgets to stylish clothing and accessories, we have everything you need to stay ahead of the curve. <br><br>
+    
+    We pride ourselves on our commitment to customer satisfaction, and we always go above and beyond to ensure that you're happy with your purchase.
+    <br> Our friendly and knowledgeable staff are always on hand to answer your questions and provide you with expert advice. <br><br>
+    
+    So why wait? Browse our selection today and discover the many ways that [Company Name] can help you stay ahead of the game. 
+    <br> Whether you're shopping for yourself or looking for the perfect gift, we have something for everyone. Thank you for visiting our website, and we look forward to serving you!</p><br><br>
+
+  <footer>
+    <p>
+      Thank you for visiting Our Company. If you have any questions or would
+      like to learn more about our services, please don't hesitate to
+      <a href="/Contact">contact us</a>.
+    </p>
+  </footer>
+</section>
+
+{% endblock %}
