@@ -1,0 +1,50 @@
+<!-- Extection to the template.html file -->
+{% extends "template.html" %}
+
+<!-- Title Block -->
+{% block title %}About Us{% endblock %}
+
+<!-- Link to home page -->
+{% block logo %}<a href="{{url_for('index')}}">Company</a>{% endblock %} {%
+block Home %}<a href="{{url_for('index')}}">Home</a>{% endblock %}
+
+<!-- Main Block -->
+{% block main %}
+<section id="Home">
+  <h1>About us</h1><br><br>
+  <section>
+  
+    <p>
+      We are dedicated to delivering excellence and innovation to our clients in
+      the industry.
+    </p>
+  </section>
+  <section>
+  
+    <p>
+      Our team consists of experienced and talented individuals who are
+      passionate about what they do.
+    </p>
+  </section>
+  <section>
+  
+    <p>
+      We value open and honest communication with our clients, and we make it
+      our priority to listen to their needs and concerns.
+    </p>
+  </section>
+  <section>
+  
+    <p>
+      We are committed to staying ahead of the curve in our industry by
+      constantly striving to improve and innovate.
+    </p>
+  </section>
+  <footer>
+    <p>
+      Thank you for visiting our About Us page. If you have any questions,
+      please don't hesitate to contact us.
+    </p>
+  </footer>
+</section>
+{% endblock %}
