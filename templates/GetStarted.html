@@ -1,0 +1,34 @@
+<!-- Extection to the template.html file -->
+{% extends "template.html" %}
+
+<!-- Title Block -->
+{% block title %}Get Started{% endblock %}
+
+<!-- Link to home page -->
+{% block logo %}<a href="{{url_for('home')}}">Company</a>{% endblock %} {% block
+Home %}<a href="{{url_for('home')}}">Home</a>{% endblock %}
+
+<!-- To get Feedback tab in nav bar -->
+{% block feedback %}<a href="{{url_for('Feedback')}}">Feedback</a>{% endblock %}
+
+<!-- To get Feedback in dropdown menu (smartphone mode) -->
+{% block drop_feedback %}<a href="{{url_for('Feedback')}}">Feedback</a>{%
+endblock %} {% block GB_btn %}
+
+<!-- Logout Button Block -->
+<a href="{{url_for('Logout')}}" class="action_btn">Logout </a>
+
+{% endblock %} {% block dropdown%}
+<!-- Logout Button Block -->
+<a href="{{url_for('Logout')}}" class="action_btn">  Logout  </a>{% endblock%}
+<!-- Main Block -->
+{% block main %}
+<section id="upload">
+  <h1>Get Started</h1>
+  <p>
+    <br />
+    This page is just to show you that you can add more pages
+  </p>
+  <br />
+</section>
+{% endblock %}
